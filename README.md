@@ -3,7 +3,7 @@
 
 ## Overview
 
-This repository contains the backend API for the "VoteUp" app, built using Node.js and Express.js. The API provides functionality for user .
+This repository contains the backend API for the "OnlineVoteUp" app, a platform that enables users to sign up, confirm their email, customize their profiles with pictures, create posts, and engage with posts through a voting system. Users can express their preference for posts by liking or unliking them, contributing to the total count of votes for each post. 
 
 ## Technologies Used
 
