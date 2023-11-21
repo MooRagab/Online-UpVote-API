@@ -19,10 +19,40 @@ This repository contains the backend API for the "VoteUp" app, built using Node.
 - **Nanoid:** Unique ID generator.
 - **Nodemailer:** Module for sending emails.
 - **Nodemon:** Tool for automatic server restarts during development.
+## Features
 
+### 1. User Authentication
+
+- **Signup:** Register with your email.
+- **Email Confirmation:** Receive a confirmation email after signup.
+- **Sign In:** Log in with your registered credentials.
+
+### 2. Profile Customization
+
+- **Profile Picture:** Choose a profile picture.
+- **Cover Photo:** Set a cover photo for your profile.
+
+### 3. Post Management
+
+- **Create Post:** Share your thoughts and ideas.
+- **Update Post:** Modify your posts as needed.
+- **Like Post:** Express your Vote for the post.
+- **Unlike Post:** Express your unvote for the post.
+
+
+### 4. Comment System
+
+- **Add Comments:** Engage with posts through comments.
+- **Update Comments:** Edit your comments for clarity.
+- **Delete Comments:** Remove comments if needed.
+
+  
 ## Installation
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/VoteUp-API.git
+git clonehttps://github.com/MooRagab/Online-UpVote-API.git
+
+npm install
+
