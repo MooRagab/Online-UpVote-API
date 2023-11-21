@@ -5,7 +5,7 @@
   "main": "index.js.js",
   "type": "module",
   "engines": {
-    "node": "14x"
+    "node": "14.x"
   },
   "scripts": {
     "start": "node index.js",
