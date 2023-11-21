@@ -1,0 +1,484 @@
+{
+	"info": {
+		"_postman_id": "3f00629b-404d-4b61-b58a-1380a5897f94",
+		"name": "Online VoteUp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27999934",
+		"_collection_link": "https://warped-moon-867004.postman.co/workspace/Ragab's-Workspace~139f7d90-8c35-40b6-ac87-a4f60780b551/collection/27999934-3f00629b-404d-4b61-b58a-1380a5897f94?action=share&source=collection_link&creator=27999934"
+	},
+	"item": [
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "CreatePost",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "CreateComment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "RAGAB__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTgwMmE0YWE2YmYwYWY3ODIzNDk3NCIsImlzTG9nZ2VkSW4iOnRydWUsImlhdCI6MTcwMDM1NjM3OCwiZXhwIjoxNzAwNDQyNzc4fQ.maiEmMb8grtbESBblJb6MUkYjJliOzOWUvebljoEhFM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\":\"Not Trusted Product from this man \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/post/createcomment/655945ba0052dfc9a010b112?",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"post",
+								"createcomment",
+								"655945ba0052dfc9a010b112"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LikePost",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/post/likepost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"post",
+								"likepost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UnLikePost",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "RAGAB__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NWFiY2M5MDk4MjlmZWE3MDE4Zjk4NCIsImlzTG9nZ2VkSW4iOnRydWUsImlhdCI6MTcwMDQ0NTQyMCwiZXhwIjoxNzAwNTMxODIwfQ.PgLFyiMo1MF6FvRq53WyVHOifiQZC2nDjaaMrtO30Cc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/post/unlikepost/655ab4973e5f05857aba1829",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"post",
+								"unlikepost",
+								"655ab4973e5f05857aba1829"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePost",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "RAGAB__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NWFhZDdiM2U1ZjA1ODU3YWJhMTgxZiIsImlzTG9nZ2VkSW4iOnRydWUsImlhdCI6MTcwMDUxOTIzNywiZXhwIjoxNzAwNjA1NjM3fQ.nlkviup__w6SuvfMFJUXEOCR7r-hkk9brGo272rlSBs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"ana men\" ,\r\n    \"caption\":\"ay7aga\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/post/updatepost/655ab4973e5f05857aba1829",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"post",
+								"updatepost",
+								"655ab4973e5f05857aba1829"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePost",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateComment",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "RAGAB__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NWFiY2M5MDk4MjlmZWE3MDE4Zjk4NCIsImlzTG9nZ2VkSW4iOnRydWUsImlhdCI6MTcwMDU0MzUyMiwiZXhwIjoxNzAwNjI5OTIyfQ.pTv3855xzpYyKgtsCVx78JELvtnGQUZv5MRHJxSPAmU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\":\"not good product\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/post/updatecomment/655c3c2ea9ef7de8ee2e52cc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"post",
+								"updatecomment",
+								"655c3c2ea9ef7de8ee2e52cc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteComment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/post/deletecomment/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"post",
+								"deletecomment",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "RAGAB__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTgwMmE0YWE2YmYwYWY3ODIzNDk3NCIsImlzTG9nZ2VkSW4iOnRydWUsImlhdCI6MTcwMDI3MjE3MSwiZXhwIjoxNzAwMzU4NTcxfQ.qz177OV8yKjB8zfAdBokwCmmpVXhGIVPKstutpD55k8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/user/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProfilePic",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "RAGAB__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTgwMmE0YWE2YmYwYWY3ODIzNDk3NCIsImlzTG9nZ2VkSW4iOnRydWUsImlhdCI6MTcwMDI3MjE3MSwiZXhwIjoxNzAwMzU4NTcxfQ.qz177OV8yKjB8zfAdBokwCmmpVXhGIVPKstutpD55k8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/D:/Ay 7aga/Dis PFP/14afceb1d18ee796999e717c77f142ef.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/user/profilePic",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"profilePic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CoverPic",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "RAGAB__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTgwMmE0YWE2YmYwYWY3ODIzNDk3NCIsImlzTG9nZ2VkSW4iOnRydWUsImlhdCI6MTcwMDI3MjE3MSwiZXhwIjoxNzAwMzU4NTcxfQ.qz177OV8yKjB8zfAdBokwCmmpVXhGIVPKstutpD55k8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": [
+										"/D:/Ay 7aga/Dis PFP/08b2aabc27fd827bbf69a1c651ce58b0.jpg",
+										"/D:/Ay 7aga/Dis PFP/9bb97d48dbb322697cec173181f7f69c.jpg",
+										"/D:/Ay 7aga/Dis PFP/25c1fbbc47fe6279fc4f6a87850a674c.jpg",
+										"/D:/Ay 7aga/Dis PFP/43b7366605588887baa5e3b2b48af9c6.jpg",
+										"/D:/Ay 7aga/Dis PFP/57c321ff6501d394452d023fa6fe88c7.jpg"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/user/profileCoverPic",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"profileCoverPic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUserName",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "RAGAB__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NWFhZDdiM2U1ZjA1ODU3YWJhMTgxZiIsImlzTG9nZ2VkSW4iOnRydWUsImlhdCI6MTcwMDUxMjc4NSwiZXhwIjoxNzAwNTk5MTg1fQ.5Sg_KF6AlUsckvoOXBnP2MlYbn1LJZnjWp8FMpuVAtc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"password\":\"Mohamed8809\" ,\r\n\"cPassword\":\"Mohamed8809\",\r\n\"userName\":\"Ragab\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/user/updateusername",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"updateusername"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "SignUp",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "SignIn",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"midoragab811@gmail.com\",\r\n    \"password\": \"Ahmed@8809\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/auth/signIn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"signIn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendCode",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\":\"midoragab811@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/auth/sendCode",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"sendCode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ForgetPassword",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\":\"a9ImtXcOWVzaoXHaTaSvY\",\r\n    \"newPassword\":\"Ahmed@8809\",\r\n    \"email\":\"rmidoragab222@gmail.com\"\r\n    \"cPassword\": \"Ahmed@8809\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/auth/forgetPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"forgetPassword"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
